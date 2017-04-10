@@ -25,7 +25,7 @@ MAX_CONNECTION_ATTEMPTS = 50
 
 
 def get_active_default_settings():
-    result = dict(active_learning=True,
+    result = dict(active=True,
                   port=DEFAULT_PORT,
                   predictions='/dev/null',
                   )
