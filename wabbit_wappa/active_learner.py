@@ -46,10 +46,10 @@ class DaemonVWProcess():
         class (such as a consistent value for `port`),
         which should be guaranteed in the calling context.
 
-        If 'command' is not given, or if 'ip' is given, assume that a
+        If 'command' is not given, assume that a
             daemonized VW process has already been launched, and attach
             to it with the given ip and port."""
-        if command and not ip:
+        if command:
             # Launch the VW process, which we will communicate with only
             # via its socket
             self.vw_process = pexpect.spawn(command)
